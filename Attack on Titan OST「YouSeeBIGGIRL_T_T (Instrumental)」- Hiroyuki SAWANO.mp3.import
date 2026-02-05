@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://pqcfx31eu4i4"
+path="res://.godot/imported/Attack on Titan OST「YouSeeBIGGIRL_T_T (Instrumental)」- Hiroyuki SAWANO.mp3-3a7f02f0435cbb42a7542d337479d260.mp3str"
+
+[deps]
+
+source_file="res://Attack on Titan OST「YouSeeBIGGIRL_T_T (Instrumental)」- Hiroyuki SAWANO.mp3"
+dest_files=["res://.godot/imported/Attack on Titan OST「YouSeeBIGGIRL_T_T (Instrumental)」- Hiroyuki SAWANO.mp3-3a7f02f0435cbb42a7542d337479d260.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
