@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpqwcl0h6x6ek"]
+
+[ext_resource type="Texture2D" uid="uid://mktg22sr01lo" path="res://download.jpeg" id="1_vsjny"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mgtde"]
+texture = ExtResource("1_vsjny")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_mgtde")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 152.0
+offset_right = 361.0
+offset_bottom = 192.0
+theme_override_font_sizes/normal_font_size = 26
+text = "Username"
+tab_size = 9

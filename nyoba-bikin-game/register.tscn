@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=3 uid="uid://d6xpsitwh0aq"]
+
+[ext_resource type="Script" uid="uid://bwp1r0k5aji0k" path="res://register.gd" id="1_r642n"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r642n")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -290.5
+offset_top = -85.5
+offset_right = 290.5
+offset_bottom = 85.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UsernameInput" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Masukan Username"
+
+[node name="PasswordInput" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Masukan Password"
+
+[node name="RoleOption" type="OptionButton" parent="VBoxContainer"]
+layout_mode = 2
+selected = 0
+item_count = 2
+popup/item_0/text = "player"
+popup/item_0/id = 0
+popup/item_1/text = "admin"
+popup/item_1/id = 1
+
+[node name="RegistrationButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Register"
+
+[node name="statusLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[connection signal="pressed" from="VBoxContainer/RegistrationButton" to="." method="_on_registration_button_pressed"]
